@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve - Graphic Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+		<img src="portfolio/steve.png" alt="Logo de mon site" id="logo">
+        <div class="name"><span>Steve</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="contenu">
+            <img class="profile" src="portfolio/my-notion-face-portrait.png" alt="profile">
+            <h1>Hello, je suis Steve Kouadio <br> <span>Designer & 3D Artist</span></h1>
+            <p>J’aide les entreprises et les entrepreneurs à construire une identité visuelle unique et percutante.</p>
+            <a href="#contact" class="cta">Contactez-moi</a>    
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>À propos</h2>
+        <p>Technicien en maintenance informatique & Designer Graphique avec plusieurs années d’expérience en installation, configuration et optimisation de systèmes IT. Parallèlement, je conçois des identités visuelles et des supports de communication pour entreprises et entrepreneurs.</p>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Skills</h2>
+        <div class="grid-service">
+            <div class="service-card">
+                <img src="icon/creation-de-logo.png" alt="Image de la card">
+                <h3>Design Graphique</h3>
+                <p>Création visuels de supports de communication.</p>
+                
+            </div>
+            <div class="service-card">
+                <img src="icon/cube-3d.png" alt="Image de la card">
+                <h3>Modelage 3D</h3>
+                <p>Creation de produit et environnement 3D.</p>
+                
+            </div>
+            <div class="service-card">
+                <img src="icon/montage-video.png" alt="Image de la card">
+                <h3>Montage</h3>
+                <p>Réalisation de vidéo et animation 2D.</p>
+                
+            </div>
+            <div class="service-card">
+                <img src="icon/graphiques-animes.png" alt="Image de la card">
+                <h3>Web Design</h3>
+                <p>
+                    Creation de Design web et apps.
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--
+    <section id="skills" class="skills">
+        <h2>Compétences</h2>
+        <div class="grid-skill">
+            <div class="skill-card">
+                <h3>identité de Marque</h3>
+                <p>Création d’identités de marque mémorables et cohérentes.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Design 3D</h3>
+                <p>Modélisation et rendu 3D pour le produit et l’architecture.</p>
+            </div>
+            <div class="skill-card">
+                <h3>UI/UX Design</h3>
+                <p>Conception d’interfaces utilisateur optimisées.</p>
+            </div>
+            <div class="skill-card">
+                <h3>Développement Web</h3>
+                <p>Création de sites web modernes et responsives.</p>
+            </div>
+        </div>
+    </section>
+    -->
+    
+
+    <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid-portfolio">
+            <div class="portfolio-item">
+                <img src="portfolio/untitled6.png" alt="Projet 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/untitled5.png" alt="Projet 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/canette1.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/LOGO MAIN.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/Sans titre1.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/Petia.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/hub nodes.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/bee data.png" alt="Projet 3">
+            </div>
+            <div class="portfolio-item">
+                <img src="portfolio/OctoLink.png" alt="Projet 3">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+		<div class="container">
+            <h1 class="form-title">Contact</h1>
+            <form id="contactForm" class="form-container">
+                <div class="form-group">
+                    <label for="nom" class="form-label">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="form-input" placeholder="Entrez votre nom">
+                    <p id="nomErreur" class="error-message"></p>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email :</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Entrez votre email">
+                    <p id="emailErreur" class="error-message"></p>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message :</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Entrez votre message"></textarea>
+                    <p id="messageErreur" class="error-message"></p>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button id="submitButton" class="submit-button" type="submit">Envoyer</button>
+                </div>
+            </form>
+            <div id="messageSucces" class="success-message" role="alert">
+                <strong class="font-bold">Succès !</strong>
+                <span class="block sm:inline">Message envoyé avec succès.</span>
+            </div>
+	</section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
